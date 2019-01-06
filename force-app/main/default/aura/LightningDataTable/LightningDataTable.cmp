@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="LightningDataTableController" access="global" >
+<aura:attribute name="ObjectName" type="String" access="global"/>
+    <aura:attribute name="FieldsetName" type="string" access="global"/>
+    <aura:attribute name="ParentId" type="string" access="global"/>
+    <aura:attribute name="ParentIdValue" type="string"/>
+    <aura:attribute name="mydata" type="Object"/>
+    <aura:attribute name="mycolumns" type="List"/>
+ 
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <lightning:datatable data="{! v.mydata }" 
+        columns="{! v.mycolumns }" 
+        keyField="Id" hideCheckboxColumn="true"/>
+    
+</aura:component>

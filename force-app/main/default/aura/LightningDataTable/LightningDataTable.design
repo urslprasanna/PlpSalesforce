@@ -1,0 +1,6 @@
+<design:component >
+	   <design:attribute name="ObjectName" label="Enter Object API Name" />
+    <design:attribute name="FieldsetName" label="Enter FieldSet Name" />
+    <design:attribute name="ParentId" label="Enter Parent Id API Name" />
+    
+</design:component>
