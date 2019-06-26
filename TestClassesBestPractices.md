@@ -12,7 +12,7 @@ Positive behavior : Test every expected behavior occurs through every expected p
 Negative Testcase :-Not to add future date , Not to specify negative amount.
 Restricted User :-Test whether a user with restricted access used in your code .
 9. Test class should be annotated with @isTest .
-10 . @isTest annotation with test method  is equivalent to testMethod keyword .
+10. @isTest annotation with test method  is equivalent to testMethod keyword .
 11. Test method should static and no void return type .
 12. Test class and method default access is private ,no matter to add access specifier .
 13. Classes with @isTest annotation can't be a interface or enum .
