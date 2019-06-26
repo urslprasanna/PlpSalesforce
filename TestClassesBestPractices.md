@@ -28,12 +28,12 @@
 16. _@Testvisible_ annotation to make visible private methods inside test classes.
 17. Test method can't be used to test web-service call out. Please use call out mock.
 18. You can't  send email from test method.
-19.User, profile, organization, AsyncApexjob, Corntrigger, RecordType, ApexClass, ApexComponent, ApexPage we can access without (seeAllData=true).
-20. SeeAllData=true will not work for API 23 version eailer.
-21. Accessing static resource test records in test class e,g List<Account> accList=Test.loadData(Account,SobjectType,'ResourceName').
-22. Create TestFactory class with @isTest annotation to exclude from organization code size limit.
+19.User, profile, organization, AsyncApexjob, Corntrigger, RecordType, ApexClass, ApexComponent, ApexPage we can access without _(seeAllData=true)_.
+20. _SeeAllData=true_ will not work for API 23 version eailer.
+21. Accessing static resource test records in test class eg: List<Account> accList=Test.loadData(Account,SobjectType,'ResourceName').
+22. Create TestFactory class with _@isTest_ annotation to exclude from organization code size limit.
 23. @testSetup to create test records once in a method  and use in every test method in the test class.
-24. We can run unit test by using Salesforce Standard UI,Force.com IDE ,Console ,API.
-25. As apex runs in system mode so the permission and record sharing are not taken into account . So we need to use system.runAs to enforce record sharing.
-26. System.runAs will not enforce user permission or field level permission.
+24. We can run unit test by using Salesforce Standard UI, Force.com IDE, Console, API.
+25. As apex runs in system mode so the permission and record sharing are not taken into account. So we need to use system.runAs to enforce record sharing.
+26. _System.runAs_ will not enforce user permission or field level permission.
 27. Every test to runAs count against the total number of DML issued in the process.
