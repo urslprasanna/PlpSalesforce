@@ -3,7 +3,9 @@
 3. Unit test is to test particular piece of code working properly or not .
 4. Unit test method takes no argument, send no email , commit no data to database and flagged with testMethod keyword .
 5. To deploy to production at least 75% code coverage is required 
-6. Test method and test classes are not counted as a part of code limit7. System.debug statement are not counted as a part of apex code limit.8. We should not focus on the  percentage of code coverage ,we should make sure that every use case should covered including positive, negative,bulk and single record .
+6. Test method and test classes are not counted as a part of code limit
+7. System.debug statement are not counted as a part of apex code limit.
+8. We should not focus on the  percentage of code coverage ,we should make sure that every use case should covered including positive, negative,bulk and single record .
 Single Action -To verify that the the single record produces the correct an expected result .
 Bulk action -Any apex record trigger ,class or extension must be invoked for 1-200 records .
 Positive behavior : Test every expected behavior occurs through every expected permutation , i,e user filled out every correctly data and not go past the limit .
