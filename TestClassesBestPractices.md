@@ -8,11 +8,16 @@
 6. Test method and test classes are not counted as a part of code limit
 7. System.debug statement are not counted as a part of apex code limit.
 8. We should not focus on the  percentage of code coverage, we should make sure that every use case should covered including positive, negative, bulk and single record.
-  **Single Action** - To verify that the the single record produces the correct an expected result.
-  **Bulk action** - Any apex record trigger ,class or extension must be invoked for 1-200 records.
-  **Positive behavior:** Test every expected behavior occurs through every expected permutation, i.e., user filled out every correctly data and not go past the limit.
-  **Negative Testcase:** Not to add future date, Not to specify negative amount.
-  **Restricted User:** Test whether a user with restricted access used in your code.
+
+   **Single Action** - To verify that the the single record produces the correct an expected result.
+   
+   **Bulk action** - Any apex record trigger ,class or extension must be invoked for 1-200 records.
+   
+   **Positive behavior:** Test every expected behavior occurs through every expected permutation, i.e., user filled out every correctly data and not go past the limit.
+   
+   **Negative Testcase:** Not to add future date, Not to specify negative amount.
+   
+   **Restricted User:** Test whether a user with restricted access used in your code.
 9. Test class should be annotated with _@isTest_.
 10. _@isTest_ annotation with test method  is equivalent to testMethod keyword.
 11. Test method should static and no void return type.
