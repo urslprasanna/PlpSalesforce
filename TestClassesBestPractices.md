@@ -31,7 +31,7 @@
 19.User, profile, organization, AsyncApexjob, Corntrigger, RecordType, ApexClass, ApexComponent, ApexPage we can access without _(seeAllData=true)_.
 20. _SeeAllData=true_ will not work for API 23 version eailer.
 21. Accessing static resource test records in test class 
-      eg: List<Account> accList=Test.loadData(Account,SobjectType,'ResourceName').
+      - eg: List<Account> accList=Test.loadData(Account,SobjectType,'ResourceName').
 22. Create TestFactory class with _@isTest_ annotation to exclude from organization code size limit.
 23. @testSetup to create test records once in a method  and use in every test method in the test class.
 24. We can run unit test by using Salesforce Standard UI, Force.com IDE, Console, API.
